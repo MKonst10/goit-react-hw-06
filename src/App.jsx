@@ -11,7 +11,7 @@ function App() {
   const contacts = useSelector((state) => state.contacts.items);
   const dispatch = useDispatch();
 
-  const [search, setSearch] = useState("");
+  const search = useSelector((state) => state.filters.name);
   const addContact = (newContactData) => {
     const newContact = {
       ...newContactData,
@@ -38,7 +38,7 @@ function App() {
     <div>
       <h1>Phonebook</h1>
       <ContactForm onAddContact={addContact} />
-      <SearchBox value={search} onSearch={setSearch} />
+      <SearchBox value={search} dispatch={dispatch} />
       <ContactList contacts={filteredContacts} onDelete={deleteContact} />
     </div>
   );
