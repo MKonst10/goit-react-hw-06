@@ -33,11 +33,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #243642;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: #629584;
+  text-shadow: -1px -1px 0 #e2f1e7, 0px -1px 1px #e2f1e7, -1px 1px 0 #e2f1e7,
+    1px 1px 0 #e2f1e7;
 }
 
 button {

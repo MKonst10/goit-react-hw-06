@@ -26,4 +26,15 @@
   align-items: center;
   margin: 0;
   padding: 0;
+  color: #e2f1e7;
+}
+
+.button {
+  background-color: #387478;
+  border: none;
+  color: #e2f1e7;
+}
+
+.infoItem svg {
+  fill: #629584;
 }
